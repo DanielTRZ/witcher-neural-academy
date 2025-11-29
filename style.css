@@ -15,14 +15,6 @@ body {
     position: relative;
 }
 
-.medallion {
-    width: 90px;
-    position: absolute;
-    top: -10px;
-    left: 20px;
-    opacity: 0.7;
-}
-
 #langToggle {
     position: absolute;
     top: 25px;
@@ -163,4 +155,5 @@ footer {
     min-height: 40px;
     color: #d7caa3;
 }
+
 
