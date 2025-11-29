@@ -15,3 +15,4 @@ Mini tryb treningu sieci z efektownymi opisami kroków
 Wybór funkcji aktywacji (ReLU, Sigmoid, Tanh, Linear)
 
 Dwujęzyczne wsparcie (PL/EN)
+https://danieltrz.github.io/witcher-neural-academy/
