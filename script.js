@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Wiedźmińska Akademia – Jak działają sieci neuronowe?",
             description: "Sieć neuronowa to grupa powiązanych „neuronów”, które uczą się na podstawie doświadczeń. Zupełnie jak wiedźmin – każde zlecenie daje mu nową wiedzę i refleksy.",
             explanation: "Sygnał przepływa przez warstwę wejściową, potem przez ukryte warstwy, aż do wyjścia – jak informacje, które wiedźmin łączy przed walką.",
-            footer: "Strona w pełnym stylu wiedźmińskim ⚔️",
+            footer: " Daniel Trzeciński – Wiedźmiński Świt ⚔️",
             bestiaryTitle: "Bestiariusz Sztucznej Inteligencji",
             dropoutDesc: "Losowy potwór zjadający część neuronów, aby sieć stała się silniejsza.",
             overfittingDesc: "Stwór, który uczy się wszystkiego na pamięć i potem głupieje przy nowych zadaniach.",
@@ -129,3 +129,4 @@ document.addEventListener("DOMContentLoaded", () => {
     animate();
     updateLanguage();
 });
+
