@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let currentLang = "PL";
 
     const texts = {
-        PL: { 
+        PL: {
             title: "Wiedźmińska Akademia – Jak działają sieci neuronowe?",
-            description: "Sieć neuronowa to grupa powiązanych „neuronów”, które uczą się na podstawie doświadczeń. Zupełnie jak wiedźmin – każde zlecenie daje mu nową wiedzę i refleksy.",
+            description: "Sieć neuronowa to grupa powiązanych „neuronów”, które uczą się na podstawie doświadczeń. Zupełnie jak wiedźmin – każde zlecenie daje mu nową wiedzę i refleks.",
             explanation: "Sygnał przepływa przez warstwę wejściową, potem przez ukryte warstwy, aż do wyjścia – jak informacje, które wiedźmin łączy przed walką.",
             footer: " Daniel Trzeciński – Wiedźmiński Świt ⚔️",
             bestiaryTitle: "Bestiariusz Sztucznej Inteligencji",
@@ -18,9 +18,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 sigmoid: "Sigmoid – wygładza wartości między 0 a 1.",
                 tanh: "Tanh – wartości między -1 a 1, przyjemny efekt wizualny.",
                 linear: "Linear – prosty przepływ sygnału, nic nie zmienia."
-                
+
             },
-            button: "PL"
+            button: "PL",
+            activationTitle: "Funkcja Aktywacji",
+            trainingTitle: "Mini Trening Sieci",
+            trainBtn: "Rozpocznij rytuał treningu",
+            trainingOutput: "Sieć czeka na rozkaz...",
         },
         EN: {
             title: "Witcher Academy – How do neural networks work?",
@@ -37,7 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 tanh: "Tanh – values between -1 and 1, nice visual effect.",
                 linear: "Linear – simple flow, no changes."
             },
-            button: "EN"
+            button: "EN",
+            activationTitle: "Activation Function",
+            trainingTitle: "Mini Network Training",
+            trainBtn: "Start the training ritual",
+            trainingOutput: "The network awaits...",
         }
     };
 
@@ -75,6 +83,10 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("dropoutDesc").textContent = t.dropoutDesc;
         document.getElementById("overfittingDesc").textContent = t.overfittingDesc;
         document.getElementById("backpropDesc").textContent = t.backpropDesc;
+        document.getElementById("activationTitle").textContent = t.activationTitle;
+        document.getElementById("trainingTitle").textContent = t.trainingTitle;
+        document.getElementById("trainBtn").textContent = t.trainBtn;
+        document.getElementById("trainingOutput").innerHTML = `<p>${t.trainingOutput}</p>`;
 
         updateActivationDesc();
         langToggle.textContent = t.button;
@@ -130,9 +142,3 @@ document.addEventListener("DOMContentLoaded", () => {
     animate();
     updateLanguage();
 });
-
-
-
-
-
-
