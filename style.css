@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', serif;
+    background: #0a0a0a;
+    color: #e6d7c3;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.decorated {
+    border-top: 2px solid #4a3524;
+    border-bottom: 2px solid #4a3524;
+    padding: 20px;
+    position: relative;
+}
+
+.medallion {
+    width: 90px;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    opacity: 0.7;
+}
+
+#langToggle {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    padding: 8px 15px;
+    background: #3b2e1c;
+    color: #e6d7c3;
+    border: 1px solid #8b6a47;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.content {
+    padding: 40px;
+}
+
+.intro-text {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+/* --- NEURONY --- */
+
+.network {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 50px auto;
+    width: 600px;
+}
+
+.layer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+
+.neuron {
+    width: 55px;
+    height: 55px;
+    background: #bfa37a;
+    border-radius: 50%;
+    margin: 20px 0;
+    box-shadow: 0 0 10px #d7c4a0;
+    position: relative;
+    z-index: 2;
+}
+
+/* Pulsowanie */
+.pulse {
+    animation: pulseAnim 2s infinite ease-in-out;
+}
+
+@keyframes pulseAnim {
+    0% { transform: scale(1); box-shadow: 0 0 10px #d7c4a0; }
+    50% { transform: scale(1.15); box-shadow: 0 0 25px #f4e3c3; }
+    100% { transform: scale(1); box-shadow: 0 0 10px #d7c4a0; }
+}
+
+/* Canvas do sygnału */
+#signalCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 260px;
+    pointer-events: none;
+}
+
+/* --- BŁYSKAWICA IGNI --- */
+#lightning {
+    position: absolute;
+    width: 4px;
+    background: #ffd37b;
+    box-shadow: 0 0 15px #ffefc2;
+    display: none;
+    z-index: 5;
+}
+
+/* --- DROP OUT --- */
+.neuron.disabled {
+    background: #4a3b2c;
+    box-shadow: 0 0 5px #2a2018;
+    opacity: 0.45;
+}
+
+/* --- BESTIARIUSZ --- */
+
+.bestiary h2 {
+    font-family: "MedievalSharp", serif;
+    font-size: 32px;
+    color: #d6c3a3;
+    margin-top: 50px;
+}
+
+.beast {
+    border: 1px solid #4a3524;
+    padding: 20px;
+    margin: 25px auto;
+    max-width: 600px;
+    background: rgba(50, 40, 30, 0.4);
+    box-shadow: 0 0 10px #3b2e1c;
+}
+
+footer {
+    font-size: 14px;
+    margin-top: 40px;
+}
+/* aktywacja */
+.activation-section select {
+    background: #3b2e1c;
+    border: 1px solid #8b6a47;
+    padding: 8px 10px;
+    color: #e6d7c3;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+/* trening */
+#trainBtn {
+    margin-top: 10px;
+    padding: 10px 16px;
+    background: #3b2e1c;
+    color: #e6d7c3;
+    border: 1px solid #8b6a47;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#trainingOutput {
+    margin-top: 14px;
+    background: #111;
+    padding: 12px;
+    border: 1px solid #3f3326;
+    border-radius: 6px;
+    min-height: 40px;
+    color: #d7caa3;
+}
+

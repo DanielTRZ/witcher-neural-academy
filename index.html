@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Wiedźmińska Akademia – Sieci Neuronowe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="decorated">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Witcher_Medallion.png/256px-Witcher_Medallion.png" 
+             class="medallion">
+        <h1 id="title">Wiedźmińska Akademia – Jak działają sieci neuronowe?</h1>
+        <button id="langToggle">EN</button>
+    </header>
+
+    <section class="content">
+
+        <p id="description" class="intro-text">
+            Sieć neuronowa to grupa powiązanych „neuronów”, które uczą się na podstawie doświadczeń. 
+            Zupełnie jak wiedźmin – każde zlecenie daje mu nową wiedzę i refleksy.
+        </p>
+
+        <!-- ANIMOWANA SIEĆ -->
+        <div class="network">
+            <div class="layer">
+                <div class="neuron pulse" data-index="1"></div>
+                <div class="neuron pulse" data-index="2"></div>
+                <div class="neuron pulse" data-index="3"></div>
+            </div>
+
+            <div class="layer">
+                <div class="neuron pulse" data-index="4"></div>
+                <div class="neuron pulse" data-index="5"></div>
+            </div>
+
+            <div class="layer">
+                <div class="neuron pulse" data-index="6"></div>
+            </div>
+
+            <canvas id="signalCanvas"></canvas>
+            <div id="lightning"></div>
+        </div>
+
+        <p id="explanation">
+            Sygnał przepływa przez warstwę wejściową, potem przez warstwy ukryte, aż do wyjścia – 
+            niczym informacja, która w głowie wiedźmina łączy fakty przed walką.
+        </p>
+
+        <!-- BESTIARIUSZ AI -->
+        <section class="bestiary">
+            <h2 id="bestiaryTitle">Bestiariusz Sztucznej Inteligencji</h2>
+
+            <div class="beast">
+                <h3>Dropout</h3>
+                <p id="dropoutDesc">
+                    Losowy potwór zjadający część neuronów, aby sieć stała się silniejsza i mniej przewidywalna.
+                </p>
+            </div>
+
+            <div class="beast">
+                <h3>Overfitting</h3>
+                <p id="overfittingDesc">
+                    Stwór, który sprawia, że sieć uczy się wszystkiego na pamięć, ale głupieje przy nowych zadaniach.
+                </p>
+            </div>
+
+            <div class="beast">
+                <h3>Backpropagation</h3>
+                <p id="backpropDesc">
+                    Magiczny rytuał wysyłania błędu wstecz, aby poprawić decyzje.
+                </p>
+            </div>
+        </section>
+
+   <!-- Funkcje aktywacji -->
+<section class="activation-section decorated">
+    <h2 id="activationTitle">Funkcja Aktywacji</h2>
+
+    <select id="activationSelect" aria-label="Wybór funkcji aktywacji">
+        <option value="relu">ReLU</option>
+        <option value="sigmoid">Sigmoid</option>
+        <option value="tanh">Tanh</option>
+        <option value="linear">Linear</option>
+    </select>
+
+    <p id="activationDesc">ReLU – szybka, prosta, wiedźmińska.</p>
+</section>
+
+<!-- Mini Trening -->
+<section class="training-section decorated">
+    <h2 id="trainingTitle">Mini Trening Sieci</h2>
+    <button id="trainBtn">Rozpocznij rytuał treningu</button>
+
+    <div id="trainingOutput" aria-live="polite">
+        <p>Sieć czeka na rozkaz...</p>
+    </div>
+</section>
+   
+   
+    </section>
+
+    <footer class="decorated">
+        <p id="footerText"> Daniel Trzeciński – Wiedźmiński Świt⚔️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
