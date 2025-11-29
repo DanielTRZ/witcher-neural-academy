@@ -13,13 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
             dropoutDesc: "Losowy potwór zjadający część neuronów, aby sieć stała się silniejsza.",
             overfittingDesc: "Stwór, który uczy się wszystkiego na pamięć i potem głupieje przy nowych zadaniach.",
             backpropDesc: "Magiczny rytuał wysyłania błędu wstecz, aby poprawić decyzje.",
+            trainingOutput: "Sieć czeka na rozkaz...",
             activationDesc: {
                 relu: "ReLU – standardowa funkcja aktywacji, zwiększa dynamikę sygnałów.",
                 sigmoid: "Sigmoid – wygładza wartości między 0 a 1.",
                 tanh: "Tanh – wartości między -1 a 1, przyjemny efekt wizualny.",
                 linear: "Linear – prosty przepływ sygnału, nic nie zmienia."
+                
             },
-            button: "EN"
+            button: "PL"
         },
         EN: {
             title: "Witcher Academy – How do neural networks work?",
@@ -30,13 +32,14 @@ document.addEventListener("DOMContentLoaded", () => {
             dropoutDesc: "A random monster that eats neurons so the network becomes stronger.",
             overfittingDesc: "A beast that memorizes everything and fails at new tasks.",
             backpropDesc: "A magical ritual sending the error backwards to improve decisions.",
+            trainingOutput:  "The network is waiting for an order...",
             activationDesc: {
                 relu: "ReLU – standard activation, makes signals stronger.",
                 sigmoid: "Sigmoid – smooths values between 0 and 1.",
                 tanh: "Tanh – values between -1 and 1, nice visual effect.",
                 linear: "Linear – simple flow, no changes."
             },
-            button: "PL"
+            button: "EN"
         }
     };
 
@@ -129,6 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
     animate();
     updateLanguage();
 });
+
 
 
 
