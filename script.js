@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Witcher Academy – How do neural networks work?",
             description: "A neural network is a group of connected neurons that learn from experience. Just like a witcher – every contract teaches him something new.",
             explanation: "The signal flows through the input layer, then hidden layers, to the output – like a witcher combining clues before battle.",
-            footer: "Full Witcher-style webpage ⚔️",
+            footer: "Daniel Trzeciński – The Witcher Dawn ⚔️",
             bestiaryTitle: "Bestiary of Artificial Intelligence",
             dropoutDesc: "A random monster that eats neurons so the network becomes stronger.",
             overfittingDesc: "A beast that memorizes everything and fails at new tasks.",
@@ -129,5 +129,6 @@ document.addEventListener("DOMContentLoaded", () => {
     animate();
     updateLanguage();
 });
+
 
 
